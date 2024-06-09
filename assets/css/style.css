@@ -1,0 +1,161 @@
+body {
+  display: flex;
+  margin: 0;
+  height: 100%;
+  font-family: Roboto;
+  overflow: hidden;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 2px solid #e8ebe4;
+  border-right: 2px solid #e8ebe4;
+}
+
+.avatar {
+  margin-left: 8px;
+}
+
+.icons {
+  margin-right: 16px;
+}
+
+.profile .left-content {
+  display: flex;
+  align-items: center;
+}
+
+.profile .left-content .avatar {
+  margin-right: 10px;
+}
+
+.profile .icons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #a7a6a6;
+}
+
+/* LISTA DE CONTACTOS */
+.contact-list {
+  width: 400px;
+  background-color: rgb(253, 253, 253);
+  overflow: auto;
+}
+
+.profile .avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.profile:hover .name,
+.profile:hover .message,
+.profile:hover .icons i {
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+
+/* BOTÓN DE NUEVO CHAT */
+.chat-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 126px;
+  border-bottom: 2px solid #e8ebe4;
+  border-right: 2px solid #e8ebe4;
+}
+
+.new-chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 200px;
+}
+
+.new-chat-btn {
+  background-color: #ad9cd4;
+  color: white;
+  font-size: 18px;
+  height: 56px;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.4s, box-shadow 0.3s;
+}
+
+.new-chat-btn:hover {
+  background-color: #bb95e6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* FIN DEL BOTÓN DE NUEVO CHAT */
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid #e8ebe4;
+  border-right: 2px solid #e8ebe4;
+  height: 70px;
+}
+
+.contact-item:hover {
+  background-color: #ad9cd4;
+  color: #f7f4fd;
+  transition: 350ms;
+}
+
+.contact-item img {
+  border: 2px solid #bb95e6;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.name {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.message {
+  font-size: 16px;
+}
+
+/* SECCIÓN PRINCIPAL */
+.content {
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.content img {
+  height: 400px;
+  width: 400px;
+  border-radius: 5%;
+  margin-bottom: 16px;
+}
+.content h2 {
+  text-align: center;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.content p {
+  text-align: center;
+  font-size: 18px;
+}
+/* FIN DE LA SECCIÓN PRINCIPAL */
